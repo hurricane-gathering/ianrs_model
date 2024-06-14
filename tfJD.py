@@ -13,9 +13,6 @@ from tensorflow.keras.applications.resnet import ResNet50
 tf.config.threading.set_inter_op_parallelism_threads(2)
 tf.config.threading.set_intra_op_parallelism_threads(2)
  
-
-
-
 # 读取CSV文件，包含图像名称和所属分组
 data = pd.read_csv('data/train.csv')
 classt = 'group'
